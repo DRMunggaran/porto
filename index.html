@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- GANTI: judul & deskripsi (tampil di tab browser dan Google) -->
+        <title>Diaz Rifqi Munggaran | Portofolio</title>
+        <meta
+            name="description"
+            content="Portofolio Nama Kamu, lulusan Informatika yang fokus pada ..."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Kumpulan ikon (dipanggil lewat <use href="#nama">) -->
+        <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+            <defs>
+                <symbol id="github" viewBox="0 0 24 24">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </symbol>
+                <symbol id="linkedin" viewBox="0 0 24 24">
+                    <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                </symbol>
+                <symbol id="mail" viewBox="0 0 24 24">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </symbol>
+                <symbol id="download" viewBox="0 0 24 24">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </symbol>
+                <symbol id="code" viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                </symbol>
+                <symbol id="wrench" viewBox="0 0 24 24">
+                    <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"
+                    />
+                </symbol>
+                <symbol id="globe" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+                </symbol>
+                <symbol id="database" viewBox="0 0 24 24">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                </symbol>
+                <symbol id="cloud" viewBox="0 0 24 24">
+                    <path
+                        d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"
+                    />
+                </symbol>
+                <symbol id="flask" viewBox="0 0 24 24">
+                    <path
+                        d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V2"
+                    />
+                    <path d="M8.5 2h7" />
+                    <path d="M14.5 16h-5" />
+                </symbol>
+                <symbol id="briefcase" viewBox="0 0 24 24">
+                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </symbol>
+                <symbol id="calendar" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </symbol>
+                <symbol id="pin" viewBox="0 0 24 24">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                </symbol>
+                <symbol id="phone" viewBox="0 0 24 24">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                </symbol>
+                <symbol id="send" viewBox="0 0 24 24">
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                </symbol>
+                <symbol id="moon" viewBox="0 0 24 24">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </symbol>
+                <symbol id="sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4" />
+                    <path
+                        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+                    />
+                </symbol>
+            </defs>
+        </svg>
+
+        <!-- ===== NAVBAR ===== -->
+        <header class="navbar">
+            <div class="navbar-inner">
+                <a href="#beranda" class="brand">Diaz Rifqi Munggaran</a>
+                <nav aria-label="Navigasi utama">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#keahlian">Keahlian</a>
+                    <a href="#pengalaman">Pengalaman</a>
+                    <!-- <a href="#proyek">Proyek</a> -->
+                    <a href="#kontak">Kontak</a>
+                    <button
+                        class="theme-toggle"
+                        id="theme-toggle"
+                        aria-label="Ganti tema"
+                    >
+                        <svg class="icon icon-moon"><use href="#moon" /></svg>
+                        <svg class="icon icon-sun"><use href="#sun" /></svg>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- ===== HERO (GANTI teks, foto, dan link) ===== -->
+            <section id="beranda" class="hero">
+                <div class="hero-text">
+                    <h1>Halo, saya<br />Diaz RIfqi Munggaran</h1>
+                    <p class="hero-sub">
+                        Lulusan Informatika yang mencari peran
+                        <strong>Data Engineer</strong>, dengan fokus pada
+                        pipeline data, SQL, dan Python.
+                    </p>
+                    <p class="hero-desc">
+                        Fokus pada pengelolaan dan pengolahan data, mulai dari
+                        perancangan database hingga pemrosesan data berskala
+                        besar, dengan latar belakang machine learning.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="cv.pdf" class="btn btn-primary" download
+                            ><svg class="icon"><use href="#download" /></svg
+                            >Unduh CV</a
+                        >
+                        <!-- <a href="#proyek" class="btn btn-secondary"
+                            >Lihat Proyek</a
+                        > -->
+                    </div>
+                    <div class="socials">
+                        <a
+                            href="https://github.com/DRMunggaran"
+                            aria-label="GitHub"
+                            ><svg class="icon"><use href="#github" /></svg
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/diaz-munggaran-566b4926b/"
+                            aria-label="LinkedIn"
+                            ><svg class="icon"><use href="#linkedin" /></svg
+                        ></a>
+                        <a
+                            href="mailto:dmunggaran47@gmail.com"
+                            aria-label="Email"
+                            ><svg class="icon"><use href="#mail" /></svg
+                        ></a>
+                    </div>
+                </div>
+                <div class="hero-photo">
+                    <img
+                        src="images/foto.jpg"
+                        alt="Foto Nama Kamu"
+                        width="330"
+                        height="330"
+                    />
+                    <span class="badge"
+                        ><i class="dot"></i>Tersedia untuk bekerja</span
+                    >
+                </div>
+            </section>
+
+            <!-- ===== KEAHLIAN (tambah/kurangi kartu dan .chip sesuka kamu) ===== -->
+            <section id="keahlian" class="section">
+                <h2>Keahlian Teknis</h2>
+                <p class="section-sub">
+                    Ringkasan teknologi yang saya kuasai dan gunakan dalam
+                    proyek.
+                </p>
+                <div class="grid-3">
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#code" /></svg>Bahasa
+                            Pemrograman
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">Python</span
+                            ><span class="chip">SQL</span
+                            ><span class="chip">JavaScript</span
+                            ><span class="chip">PHP</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#wrench" /></svg>Tools
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">Git</span
+                            ><span class="chip">Linux</span
+                            ><span class="chip">Docker</span
+                            ><span class="chip">VS Code</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#globe" /></svg>Library
+                            &amp; Framework
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">PyTorch</span
+                            ><span class="chip">TensorFlow</span
+                            ><span class="chip">OpenCV</span
+                            ><span class="chip">React</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#database" /></svg
+                            >Database
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">MySQL</span
+                            ><span class="chip">PostgreSQL</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#cloud" /></svg>Layanan
+                            Cloud
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">Vercel</span
+                            ><span class="chip">Firebase</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            <svg class="icon"><use href="#flask" /></svg
+                            >Pengujian
+                        </h3>
+                        <div class="chips">
+                            <span class="chip">Postman</span
+                            ><span class="chip">Pytest</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ===== PENGALAMAN (salin blok .exp untuk menambah) ===== -->
+            <section id="pengalaman" class="section">
+                <h2>Pengalaman</h2>
+                <p class="section-sub">
+                    Pengalaman kerja, magang, dan kerja praktik yang pernah
+                    dijalani.
+                </p>
+                <div class="stack">
+                    <article class="card exp">
+                        <div class="exp-head">
+                            <div>
+                                <h3>
+                                    <svg class="icon">
+                                        <use href="#briefcase" /></svg
+                                    >Data Analyst / Intern
+                                </h3>
+                                <p class="exp-company">
+                                    Badan Pusat Statistik Kota Tasikmalaya
+                                </p>
+                            </div>
+                            <div class="exp-meta">
+                                <span
+                                    ><svg class="icon">
+                                        <use href="#calendar" /></svg
+                                    >2025</span
+                                >
+                                <span
+                                    ><svg class="icon"><use href="#pin" /></svg
+                                    >Kota</span
+                                >
+                            </div>
+                        </div>
+                        <p class="exp-desc">
+                            Mengolah dan merapikan data survei harga (SHP, SHK,
+                            dan SHBP) untuk keperluan analisis. Mengembangkan
+                            dan mengevaluasi model prediksi harga beras berbasis
+                            LSTM dengan data SILINDA dan BAPANAS, lalu membantu
+                            membangun backend untuk mengelola data,
+                            mengintegrasikan model, dan menyimpan hasil prediksi
+                            1000 hari ke depan. Juga membantu profiling UMKM dan
+                            mempresentasikan perkembangan proyek secara berkala
+                            kepada pembimbing.
+                        </p>
+                        <div class="chips">
+                            <span class="chip chip-outline">Python</span
+                            ><span class="chip chip-outline">SQL</span>
+                        </div>
+                    </article>
+
+                    <!-- <article class="card exp">
+                        <div class="exp-head">
+                            <div>
+                                <h3>
+                                    <svg class="icon">
+                                        <use href="#briefcase" /></svg
+                                    >Jabatan / Posisi
+                                </h3>
+                                <p class="exp-company">
+                                    Nama Perusahaan atau Instansi
+                                </p>
+                            </div>
+                            <div class="exp-meta">
+                                <span
+                                    ><svg class="icon">
+                                        <use href="#calendar" /></svg
+                                    >2024</span
+                                >
+                                <span
+                                    ><svg class="icon"><use href="#pin" /></svg
+                                    >Kota</span
+                                >
+                            </div>
+                        </div>
+                        <p class="exp-desc">
+                            Jelaskan apa yang kamu kerjakan dan hasil yang
+                            dicapai.
+                        </p>
+                        <div class="chips">
+                            <span class="chip chip-outline">Git</span>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+
+            <!-- ===== PROYEK (salin blok .project untuk menambah) ===== -->
+            <!-- <section id="proyek" class="section">
+                <h2>Proyek Pilihan</h2>
+                <p class="section-sub">
+                    Beberapa proyek yang menunjukkan kemampuan saya.
+                </p>
+                <div class="grid-3">
+                    <article class="card project">
+                        <img
+                            src="images/proyek-1.svg"
+                            alt="Tangkapan layar Proyek 1"
+                            loading="lazy"
+                        />
+                        <div class="project-body">
+                            <h3>Judul Proyek 1</h3>
+                            <p>
+                                Masalah yang diselesaikan, pendekatan yang
+                                dipakai, dan hasilnya (sebutkan angka bila ada).
+                            </p>
+                            <div class="chips">
+                                <span class="chip">Python</span
+                                ><span class="chip">PyTorch</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/USERNAME/proyek-1"
+                                    >Kode</a
+                                ><a href="https://contoh.vercel.app">Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project">
+                        <img
+                            src="images/proyek-2.svg"
+                            alt="Tangkapan layar Proyek 2"
+                            loading="lazy"
+                        />
+                        <div class="project-body">
+                            <h3>Judul Proyek 2</h3>
+                            <p>Deskripsi singkat proyek kedua.</p>
+                            <div class="chips">
+                                <span class="chip">SQL</span
+                                ><span class="chip">Laravel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/USERNAME/proyek-2"
+                                    >Kode</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project">
+                        <img
+                            src="images/proyek-3.svg"
+                            alt="Tangkapan layar Proyek 3"
+                            loading="lazy"
+                        />
+                        <div class="project-body">
+                            <h3>Judul Proyek 3</h3>
+                            <p>Deskripsi singkat proyek ketiga.</p>
+                            <div class="chips">
+                                <span class="chip">React</span
+                                ><span class="chip">API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/USERNAME/proyek-3"
+                                    >Kode</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section> -->
+
+            <!-- ===== KONTAK ===== -->
+            <section id="kontak" class="section">
+                <h2>Mari Bekerja Sama</h2>
+                <p class="section-sub">
+                    Punya proyek atau lowongan? Hubungi saya lewat kontak di
+                    bawah atau kirim pesan langsung.
+                </p>
+                <div class="contact">
+                    <div class="stack">
+                        <div class="card info">
+                            <svg class="icon"><use href="#mail" /></svg>
+                            <div>
+                                <strong>Email</strong
+                                ><span>dmunggaran47@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="card info">
+                            <svg class="icon"><use href="#phone" /></svg>
+                            <div>
+                                <strong>Telepon</strong
+                                ><span>+62 813-2024-6746</span>
+                            </div>
+                        </div>
+                        <div class="card info">
+                            <svg class="icon"><use href="#pin" /></svg>
+                            <div>
+                                <strong>Lokasi</strong
+                                ><span>Ciamis, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ganti YOUR_FORM_ID dengan ID form dari formspree.io (gratis) agar pesan masuk ke emailmu -->
+                    <!-- <form
+                        class="card form"
+                        action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST"
+                    >
+                        <h3>Kirim Pesan</h3>
+                        <div class="form-row">
+                            <input
+                                type="text"
+                                name="nama"
+                                placeholder="Nama"
+                                aria-label="Nama"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                aria-label="Email"
+                                required
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            name="subjek"
+                            placeholder="Subjek"
+                            aria-label="Subjek"
+                        />
+                        <textarea
+                            name="pesan"
+                            rows="4"
+                            placeholder="Pesan"
+                            aria-label="Pesan"
+                            required
+                        ></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <svg class="icon"><use href="#send" /></svg>Kirim
+                            Pesan
+                        </button>
+                    </form> -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-name">Diaz Rifqi Munggaran</p>
+            <p class="footer-role">Informatika | Developer | Data Engineer</p>
+            <!-- <p class="footer-copy">
+                &copy; <span id="tahun">2026</span> Diaz Rifqi Munggaran. Hak cipta
+                dilindungi.
+            </p> -->
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
